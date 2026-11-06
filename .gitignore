@@ -1,0 +1,31 @@
+# Entorno virtual
+venv/
+.venv/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Django
+db.sqlite3
+*.log
+staticfiles/
+
+# Node (el frontend tiene su propio .gitignore)
+node_modules/
+dist/
+
+# Variables de entorno locales
+.env
+
+# Editor / herramientas
+.vscode/
+.idea/
+.claude/
+
+# Sistema
+Thumbs.db
+.DS_Store
+
+# Entregable PDF (se entrega aparte)
+*.pdf

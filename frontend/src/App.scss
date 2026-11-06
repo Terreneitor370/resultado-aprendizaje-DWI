@@ -1,0 +1,124 @@
+/* LOGIN / REGISTER START */
+.login-admin {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2a2a72;
+  background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+
+  &__content {
+    background-color: #fff;
+    padding: 50px 50px;
+    border-radius: 20px;
+    width: 500px;
+    max-width: 94vw;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+
+    > h1 {
+      font-size: 35px;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .login-links {
+      margin-top: 20px;
+      text-align: center;
+    }
+  }
+}
+/* LOGIN / REGISTER END */
+
+/* HOME START */
+.home {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  text-align: center;
+  background: #f4f7fb;
+}
+/* HOME END */
+
+/* DASHBOARD START */
+.dashboard {
+  min-height: 100vh;
+  background: #f4f7fb;
+
+  &__bar {
+    background: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+    color: #fff;
+    padding: 18px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+  }
+
+  &__content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 32px 16px;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 24px;
+    margin-top: 24px;
+  }
+}
+
+.widget {
+  background: #fff;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+
+  h3 {
+    margin-top: 0;
+  }
+
+  &__big {
+    font-size: 44px;
+    line-height: 1.2;
+    margin: 8px 0 12px;
+    font-weight: 700;
+    color: #0098d3;
+  }
+
+  &__source {
+    margin-top: 12px;
+    font-size: 12px;
+    color: #888;
+  }
+}
+/* DASHBOARD END */
+
+/* Override Semantic Components */
+.ui.input {
+  input {
+    background-color: #f1f1f1 !important;
+    border-color: #f1f1f1 !important;
+    border-radius: 10px !important;
+
+    &:focus {
+      background-color: #fff !important;
+      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2) !important;
+    }
+  }
+}
+
+.ui.primary.button {
+  background-color: #0098d3 !important;
+  color: #fff;
+  border-radius: 8px;
+}
+/* Override Semantic Components End */
